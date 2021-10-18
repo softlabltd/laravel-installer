@@ -1,0 +1,33 @@
+{
+    "name": "ffegu/laravel-installer",
+    "description": "Laravel web installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pran pegu",
+            "email": "ffegu0617@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ffegu\\LaravelInstaller\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ffegu\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
